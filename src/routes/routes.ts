@@ -1,5 +1,9 @@
+const protectedRoutes = {
+  gotoProfilePage: "/auth/profile",
+};
 export const appRouter = {
   gotoLandingPage: "/Landing",
   gotoBikeDetailsPage: "/details",
-  gotoUserProfilePage: "/userProfile",
+  gotoLoginPage: "/login",
+  gotoProfilePage: protectedRoutes.gotoProfilePage,
 };

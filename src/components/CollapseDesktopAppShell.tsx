@@ -3,6 +3,7 @@
 import { ReactNode } from "react";
 import { AppShell, Burger, Group, Skeleton, Title } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import { useAppSelector } from "@/store/store";
 
 interface CollapseDesktopAppShellProps {
   children: ReactNode;
@@ -13,6 +14,7 @@ const CollapseDesktopAppShell: React.FC<CollapseDesktopAppShellProps> = ({
 }) => {
   const [mobileOpened, { toggle: toggleMobile }] = useDisclosure();
   const [desktopOpened, { toggle: toggleDesktop }] = useDisclosure(true);
+  const isLogin = useAppSelector((state) => state.authReducer.value.isAuth);
 
   return (
     <AppShell
@@ -40,6 +42,7 @@ const CollapseDesktopAppShell: React.FC<CollapseDesktopAppShellProps> = ({
           />
           {/* <MantineLogo size={30} /> */}
           <Title order={2}>Dragon Bike</Title>
+          <div>{isLogin ? "LoggedIN" : "Not loggedIN"}</div>
         </Group>
       </AppShell.Header>
 

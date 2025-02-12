@@ -8,6 +8,7 @@ import {
   mantineHtmlProps,
 } from "@mantine/core";
 import CollapseDesktopAppShell from "@/components/CollapseDesktopAppShell";
+import ReduxProvider from "@/store/provider";
 
 export const metadata = {
   title: "Dragon Bike",
@@ -25,9 +26,11 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider theme={{ primaryColor: "teal" }}>
-          <CollapseDesktopAppShell>{children}</CollapseDesktopAppShell>
-        </MantineProvider>
+        <ReduxProvider>
+          <MantineProvider theme={{}}>
+            <CollapseDesktopAppShell>{children}</CollapseDesktopAppShell>
+          </MantineProvider>
+        </ReduxProvider>
       </body>
     </html>
   );

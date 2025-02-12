@@ -35,13 +35,13 @@ const BikeItemCard: React.FC<ResponsiveCardProps> = ({
             <Text fw={500} size="lg">
               {title}
             </Text>
-            {badgeText && <Badge color="blue">{badgeText}</Badge>}
+            {badgeText && <Badge color="green">{badgeText}</Badge>}
           </Group>
           <Text size="sm" c="dimmed" mt="xs">
             {description}
           </Text>
           <Flex justify="flex-end" align="flex-end" direction="row" wrap="wrap">
-            <Link href={appRouter.gotoBikeDetailsPage}>
+            <Link href={appRouter.gotoLoginPage}>
               <Button mt="md">Book Now</Button>
             </Link>
           </Flex>

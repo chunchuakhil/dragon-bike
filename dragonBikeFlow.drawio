@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.11">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1423" dy="1553" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2562" dy="2287" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -185,25 +185,26 @@
           <mxGeometry x="489.5" y="955" width="75" height="20" as="geometry" />
         </mxCell>
         <mxCell id="48P_pWtnq5vYTzR3ZCxk-128" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="750" y="1169" width="200" height="390" as="geometry" />
+          <mxGeometry x="1040" y="1050" width="200" height="390" as="geometry" />
         </mxCell>
         <mxCell id="48P_pWtnq5vYTzR3ZCxk-130" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.497;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="48P_pWtnq5vYTzR3ZCxk-127" target="48P_pWtnq5vYTzR3ZCxk-128">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="527" y="1040" />
               <mxPoint x="657" y="1040" />
-              <mxPoint x="657" y="1363" />
+              <mxPoint x="657" y="1250" />
+              <mxPoint x="1040" y="1250" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="48P_pWtnq5vYTzR3ZCxk-131" value="Check bike condition" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="780" y="1230" width="120" height="60" as="geometry" />
+          <mxGeometry x="1070" y="1111" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="48P_pWtnq5vYTzR3ZCxk-132" value="Close Ride" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=#0085FC;fontColor=#FFFFFF;whiteSpace=wrap;align=center;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=16;spacing=5;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="775" y="1440" width="140" height="40" as="geometry" />
+          <mxGeometry x="1065" y="1321" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="48P_pWtnq5vYTzR3ZCxk-133" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/miscellaneous-80/60/check-128.png" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="870" y="1390" width="38" height="38" as="geometry" />
+          <mxGeometry x="1160" y="1271" width="38" height="38" as="geometry" />
         </mxCell>
         <mxCell id="48P_pWtnq5vYTzR3ZCxk-134" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/miscellaneous-80/60/check-128.png" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1811" y="67" width="38" height="38" as="geometry" />
