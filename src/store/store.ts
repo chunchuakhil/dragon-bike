@@ -1,11 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
 import authReducer from "./features/auth/authSlice";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
+import { createLogger } from "redux-logger";
+
+const logger = createLogger();
 
 export const store = configureStore({
   reducer: {
     authReducer,
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 
 export type RootState = ReturnType<typeof store.getState>;
