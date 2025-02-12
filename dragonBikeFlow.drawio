@@ -7,7 +7,7 @@
         <mxCell id="48P_pWtnq5vYTzR3ZCxk-5" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry y="20" width="200" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="48P_pWtnq5vYTzR3ZCxk-6" value="User&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="48P_pWtnq5vYTzR3ZCxk-6" value="Customer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-120" y="150" width="50" height="150" as="geometry" />
         </mxCell>
         <mxCell id="48P_pWtnq5vYTzR3ZCxk-7" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
@@ -109,16 +109,15 @@
         <mxCell id="48P_pWtnq5vYTzR3ZCxk-97" value="Pay" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=#0085FC;fontColor=#FFFFFF;whiteSpace=wrap;align=center;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=16;spacing=5;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1370" y="175" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="48P_pWtnq5vYTzR3ZCxk-98" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1730" width="200" height="390" as="geometry" />
-        </mxCell>
-        <mxCell id="48P_pWtnq5vYTzR3ZCxk-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.004;entryY=0.529;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="48P_pWtnq5vYTzR3ZCxk-95" target="48P_pWtnq5vYTzR3ZCxk-98">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="48P_pWtnq5vYTzR3ZCxk-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.004;entryY=0.529;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="48P_pWtnq5vYTzR3ZCxk-95">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1729.1999999999998" y="206.3100000000004" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="48P_pWtnq5vYTzR3ZCxk-100" value="Booking details&lt;br&gt;1. id&lt;br&gt;2. time and date" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1760" y="122.5" width="140" height="185" as="geometry" />
         </mxCell>
-        <mxCell id="48P_pWtnq5vYTzR3ZCxk-101" value="&lt;div&gt;Admi&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="48P_pWtnq5vYTzR3ZCxk-101" value="&lt;div&gt;Admin&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-120" y="885" width="50" height="150" as="geometry" />
         </mxCell>
         <mxCell id="48P_pWtnq5vYTzR3ZCxk-102" value="Login with Google" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=#0085FC;fontColor=#FFFFFF;whiteSpace=wrap;align=center;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=16;spacing=5;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
