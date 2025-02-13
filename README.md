@@ -8,7 +8,7 @@
 
 1. As a user when i open Bike rental app, i should see list of rental bikes available near my location.
 
-2. User should be able to select the pickup time and time as well as drop time and date.
+2. User should be able to select the pickup date and time as well as drop date and time.
 
 3. After the selecting the date and time, user should see the quoted amount to be paid.
 
