@@ -1,0 +1,6 @@
+{
+  "bikeList": [
+    { "id": "1", "name": "Honda activa", "pricePerDay": "500" },
+    { "id": "2", "name": "Honda shine", "pricePerDay": "600" }
+  ]
+}
