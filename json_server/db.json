@@ -1,6 +1,24 @@
 {
+  "userList": [],
+
   "bikeList": [
-    { "id": "1", "name": "Honda activa", "pricePerDay": "500" },
-    { "id": "2", "name": "Honda shine", "pricePerDay": "600" }
+    {
+      "_id": "101",
+      "name": "Honda Activa",
+      "image": "https://img.freepik.com/free-vector/man-woman-riding-moped-mountains_74855-10868.jpg?t=st=1739283687~exp=1739287287~hmac=89604eea8ad0daed0b4c5f9cbf7a54effc3d4123e153f211a482d168d8bdb8fb&w=1800",
+      "plateNumber": "MH 123",
+      "bookingHistory": [],
+      "currentUserId": null,
+      "bookingStatus": false
+    },
+    {
+      "_id": "102",
+      "name": "Honda Shine",
+      "image": "https://img.freepik.com/free-vector/man-woman-riding-moped-mountains_74855-10868.jpg?t=st=1739283687~exp=1739287287~hmac=89604eea8ad0daed0b4c5f9cbf7a54effc3d4123e153f211a482d168d8bdb8fb&w=1800",
+      "plateNumber": "MH 122",
+      "bookingHistory": [],
+      "currentUserId": null,
+      "bookingStatus": false
+    }
   ]
 }

@@ -1,21 +1,22 @@
-interface IUser {
+export interface IUser {
   _id: string;
   name: string;
   mobileNumber: string;
-  currentBooking?: string;
+  currentBooking?: boolean;
   bookingHistory: IBooking[];
 }
 
-interface IBikeDetails {
+export interface IBikeDetails {
   _id: string;
   name: string;
+  image?: string;
   plateNumber: string;
   bookingStatus: boolean;
-  currentUserId?: string;
+  currentUserId?: string | null;
   bookingHistory: IBooking[];
 }
 
-interface IBooking {
+export interface IBooking {
   userId: string;
   bikeId: string;
   startTime: Date;
