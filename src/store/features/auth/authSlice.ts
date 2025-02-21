@@ -1,9 +1,10 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-type IAuthState = {
+export type IAuthState = {
   isAuth: boolean;
   uid: string;
-  userName: string;
+  userName: string | null;
+  userImage: string | null;
 };
 type InitialState = {
   value: IAuthState;
@@ -13,14 +14,15 @@ const initialState: InitialState = {
     isAuth: false,
     uid: "",
     userName: "",
+    userImage: "",
   },
 };
 const authSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {
-    loginAction: (state, action: PayloadAction<boolean>) => {
-      state.value.isAuth = action.payload;
+    loginAction: (state, action: PayloadAction<IAuthState>) => {
+      state.value = action.payload;
     },
     logoutAction: () => {
       return initialState;
