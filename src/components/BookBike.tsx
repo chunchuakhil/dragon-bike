@@ -94,7 +94,7 @@ const BookBike: React.FC<BookBikeCard> = ({
         />
         <DateTimePicker
           dropdownType="modal"
-          size="sm"
+          size="xs"
           value={returnDate}
           onChange={onReturnDateChange}
           label="Return Date & Time"
