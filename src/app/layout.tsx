@@ -2,13 +2,9 @@
 // All packages except `@mantine/hooks` require styles imports
 import "@mantine/core/styles.css";
 
-import {
-  ColorSchemeScript,
-  MantineProvider,
-  mantineHtmlProps,
-} from "@mantine/core";
-import CollapseDesktopAppShell from "@/components/CollapseDesktopAppShell";
+import { ColorSchemeScript, mantineHtmlProps } from "@mantine/core";
 import ReduxProvider from "@/store/provider";
+import RootHoc from "@/hoc/RootHoc";
 
 export const metadata = {
   title: "Dragon Bike",
@@ -27,9 +23,7 @@ export default function RootLayout({
       </head>
       <body>
         <ReduxProvider>
-          <MantineProvider theme={{}}>
-            <CollapseDesktopAppShell>{children}</CollapseDesktopAppShell>
-          </MantineProvider>
+          <RootHoc>{children}</RootHoc>
         </ReduxProvider>
       </body>
     </html>

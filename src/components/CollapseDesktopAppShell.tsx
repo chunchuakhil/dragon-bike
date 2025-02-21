@@ -1,9 +1,20 @@
 "use client";
 
 import { ReactNode } from "react";
-import { AppShell, Burger, Group, Skeleton, Title } from "@mantine/core";
+import {
+  AppShell,
+  Avatar,
+  Burger,
+  Button,
+  Flex,
+  Group,
+  Skeleton,
+  Title,
+} from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { useAppSelector } from "@/store/store";
+import { usePathname, useRouter } from "next/navigation";
+import { appRouter } from "@/routes/routes";
 
 interface CollapseDesktopAppShellProps {
   children: ReactNode;
@@ -14,7 +25,11 @@ const CollapseDesktopAppShell: React.FC<CollapseDesktopAppShellProps> = ({
 }) => {
   const [mobileOpened, { toggle: toggleMobile }] = useDisclosure();
   const [desktopOpened, { toggle: toggleDesktop }] = useDisclosure(true);
-  const isLogin = useAppSelector((state) => state.authReducer.value.isAuth);
+  const { userImage, isAuth, userName } = useAppSelector(
+    (state) => state.authReducer.value
+  );
+  const pathname = usePathname();
+  const router = useRouter();
 
   return (
     <AppShell
@@ -27,7 +42,7 @@ const CollapseDesktopAppShell: React.FC<CollapseDesktopAppShellProps> = ({
       padding="md"
     >
       <AppShell.Header>
-        <Group h="100%" px="md">
+        <Group h="100%" px="md" justify="space-between">
           <Burger
             opened={mobileOpened}
             onClick={toggleMobile}
@@ -42,7 +57,27 @@ const CollapseDesktopAppShell: React.FC<CollapseDesktopAppShellProps> = ({
           />
           {/* <MantineLogo size={30} /> */}
           <Title order={2}>Dragon Bike</Title>
-          <div>{isLogin ? "LoggedIN" : "Not loggedIN"}</div>
+
+          <Flex>
+            <Flex
+              justify="center"
+              align="center"
+              direction="row"
+              wrap="wrap"
+              gap={"sm"}
+            >
+              <Flex visibleFrom="xs" justify="center" gap={"sm"}>
+                {isAuth && <div>Welcome</div>}
+                {isAuth && <div>{userName?.split(" ")[0]}</div>}
+              </Flex>
+              {isAuth && <Avatar src={userImage} alt={userName ?? "image"} />}
+            </Flex>
+            {!isAuth && !pathname.includes(appRouter.gotoLoginPage) && (
+              <Button onClick={() => router.push(appRouter.gotoLandingPage)}>
+                LogIn
+              </Button>
+            )}
+          </Flex>
         </Group>
       </AppShell.Header>
 

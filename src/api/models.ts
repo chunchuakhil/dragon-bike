@@ -1,5 +1,5 @@
 export interface IUser {
-  _id: string;
+  id: string;
   name: string;
   mobileNumber: string;
   currentBooking?: boolean;
@@ -7,7 +7,7 @@ export interface IUser {
 }
 
 export interface IBikeDetails {
-  _id: string;
+  id: string;
   name: string;
   image?: string;
   plateNumber: string;

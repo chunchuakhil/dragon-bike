@@ -41,7 +41,7 @@ const BikeItemCard: React.FC<ResponsiveCardProps> = ({
             {description}
           </Text>
           <Flex justify="flex-end" align="flex-end" direction="row" wrap="wrap">
-            <Link href={appRouter.gotoLoginPage}>
+            <Link href={appRouter.gotoBikeDetailsPage}>
               <Button mt="md">Book Now</Button>
             </Link>
           </Flex>
