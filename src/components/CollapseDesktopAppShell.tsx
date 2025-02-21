@@ -67,7 +67,7 @@ const CollapseDesktopAppShell: React.FC<CollapseDesktopAppShellProps> = ({
               gap={"sm"}
             >
               <Flex visibleFrom="xs" justify="center" gap={"sm"}>
-                <div>Welcome</div>
+                {isAuth && <div>Welcome</div>}
                 {isAuth && <div>{userName?.split(" ")[0]}</div>}
               </Flex>
               {isAuth && <Avatar src={userImage} alt={userName ?? "image"} />}

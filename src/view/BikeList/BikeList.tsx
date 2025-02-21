@@ -11,7 +11,7 @@ const BikeList = () => {
     const fetchData = async () => {
       try {
         const response = await customerApi.getBikeList();
-        setBikeList(response);
+        setBikeList(response as IBikeDetails[]);
       } catch (error) {
         console.error("Error fetching bike list:", error);
       }
@@ -24,7 +24,7 @@ const BikeList = () => {
     <Flex mih={50} gap="md" justify="center" align="center" direction="column">
       {bikeList.map((bike) => (
         <BikeItemCard
-          key={bike._id}
+          key={bike.id}
           title={bike.name}
           imageSrc={bike.image}
           badgeText={bike.bookingStatus ? "Booked" : "Available"}
