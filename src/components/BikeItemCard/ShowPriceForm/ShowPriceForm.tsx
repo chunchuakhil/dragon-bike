@@ -126,10 +126,10 @@ const ShowPriceForm = () => {
               w={InputFixedWidth}
             />
           </Flex>
-          <Group>
+          <Group justify="flex-end" mt="md">
             <FaRupeeSign />
             <Text fw={700} size="lg" c="green">
-              800
+              {form.isValid() ? "800" : "0.0"}
             </Text>
           </Group>
 
