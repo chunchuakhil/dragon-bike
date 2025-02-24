@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
 import BikeItemCard from "@/components/BikeItemCard/BikeItemCard";
 import { Flex } from "@mantine/core";

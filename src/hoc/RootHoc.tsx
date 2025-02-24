@@ -8,7 +8,7 @@ import {
   logoutAction,
 } from "@/store/features/auth/authSlice";
 import { useAppDispatch, useAppSelector } from "@/store/store";
-import { MantineProvider } from "@mantine/core";
+import { Flex, MantineProvider } from "@mantine/core";
 import { getAuth } from "firebase/auth";
 import { useRouter, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -58,7 +58,17 @@ const RootHoc = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <MantineProvider theme={{}}>
-      <CollapseDesktopAppShell>{children}</CollapseDesktopAppShell>
+      <CollapseDesktopAppShell>
+        <Flex
+          mih={50}
+          gap="md"
+          justify="center"
+          align="center"
+          direction="column"
+        >
+          {children}
+        </Flex>
+      </CollapseDesktopAppShell>
     </MantineProvider>
   );
 };
