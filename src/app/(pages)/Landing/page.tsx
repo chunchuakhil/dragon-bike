@@ -5,7 +5,7 @@ import React from "react";
 const Landing = () => {
   return (
     <div>
-      will gather basic info of the availability vehicles
+      will gather basic info of the availability vehicles, Hi Hello
       <BikeList />
     </div>
   );
